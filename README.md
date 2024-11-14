@@ -1,1 +1,3 @@
-# fileManagerNODEJS
+# Менеджер файлов
+
+npm start для начала работы
