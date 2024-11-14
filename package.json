@@ -1,0 +1,15 @@
+{
+  "name": "filemanager",
+  "version": "1.0.0",
+  "description": "Простой файловый менеджер на Node.js",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "keywords": [],
+  "author": "diexan1337",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^33.2.0"
+  }
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Файловый Менеджер</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .command-input {
+            margin-bottom: 20px;
+        }
+        .output {
+            margin-top: 20px;
+            border: 1px solid #ccc;
+            padding: 10px;
+            background-color: #f9f9f9;
+            height: 300px;
+            overflow-y: auto;
+        }
+        .output pre {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Файловый Менеджер</h1>
+        <div class="command-input">
+            <label for="command">Введите команду:</label>
+            <input type="text" id="command" placeholder="list, read, write, delete, createDir, deleteDir, rename, exit">
+            <button id="execute">Выполнить</button>
+        </div>
+        <div class="output" id="output">
+            <pre></pre>
+        </div>
+    </div>
+
+    <script src="renderer.js"></script>
+</body>
+</html>
