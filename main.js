@@ -2,7 +2,7 @@ const { app, BrowserWindow, ipcMain } = require('electron');
 const path = require('path');
 const FileManager = require('./fileManager');
 
-const basePath = './testDir'; // Укажите базовый путь для тестирования
+const basePath = 'C:/'; // Укажите базовый путь для тестирования
 const fileManager = new FileManager(basePath);
 
 function createWindow () {

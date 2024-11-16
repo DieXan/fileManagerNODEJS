@@ -14,8 +14,21 @@
             max-width: 800px;
             margin: 0 auto;
         }
-        .command-input {
-            margin-bottom: 20px;
+        .directory, .file {
+            margin: 5px 0;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .directory {
+            background-color: #f0f8ff;
+        }
+        .file {
+            background-color: #fff;
         }
         .output {
             margin-top: 20px;
@@ -28,16 +41,26 @@
         .output pre {
             margin: 0;
         }
+        .path {
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+        .back-button {
+            margin-bottom: 10px;
+            padding: 10px 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f0f8ff;
+            cursor: pointer;
+        }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>Файловый Менеджер</h1>
-        <div class="command-input">
-            <label for="command">Введите команду:</label>
-            <input type="text" id="command" placeholder="list, read, write, delete, createDir, deleteDir, rename, exit">
-            <button id="execute">Выполнить</button>
-        </div>
+        <div class="path" id="current-path"></div>
+        <button class="back-button" id="back-button" disabled>Назад</button>
+        <div id="file-list"></div>
         <div class="output" id="output">
             <pre></pre>
         </div>
